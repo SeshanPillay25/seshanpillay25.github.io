@@ -1,4 +1,4 @@
-
+/*General stuff*/
 html, body{
   height: 100%;
 }
@@ -22,23 +22,6 @@ h1 {
   font-weight: 300;
 }
 
-h2 {
-  margin-bottom: 62px;
-  font-size: 22px;
-}
-
-h3 {
-  margin: 62px 0;
-  font-size: 18px;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: 900;
-}
 
 a {
   color: #fff;
@@ -74,7 +57,7 @@ div{
   text-align: center;
   line-height: 1.9;
 }
-
+/*To make the scrollbar fancy, because everyone likes fancy*/
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -109,10 +92,7 @@ div{
   padding: 30px 50px;
 }
 
-
-/*********************************************************
-  HEADER
-*********************************************************/
+/*Header*/
 
 .header {
   height: 100%;
@@ -153,36 +133,227 @@ div{
   z-index: 0;
 }
 
-
-/*********************************************************
-  About
-*********************************************************/
-.about{
-text-align: center;
-
+/*About*/
+#about {
+  background: white;
+  padding-bottom: 60px;
+  color: black;
+}
+#about .about-content {
+  max-width: 934px;
+}
+#about h3 {
+  font: 16px/36px "raleway-heavy", sans-serif;
+  text-transform: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+#about p {
+  color: black;
+}
+#about .left {
+  padding-right: 30px;
+}
+#about .right {
+  padding-left: 30px;
+}
+.row {
+  width: 94%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.ie8 .row {
+  width: 1024px;
+}
+.narrow .row {
+  max-width: 980px;
+}
+.row .row {
+  width: auto;
+  max-width: none;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.column, .columns, .bgrid {
+  position: relative;
+  padding: 0 18px;
+  min-height: 1px;
+  float: left;
+}
+.column.centered, .columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+.row.collapsed > .column, .row.collapsed > .columns, .column.collapsed, .columns.collapsed {
+  padding: 0;
+}
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+[class*="column"] + [class*="column"].end {
+  float: right;
+}
+/*Planned to add more columns*/
+.one, .row .one {
+  width: 8.33333%;
+}
+.two, .row .two {
+  width: 16.66667%;
+}
+.three, .row .three {
+  width: 25%;
+}
+.four, .row .four {
+  width: 33.33333%;
+}
+.five, .row .five {
+  width: 41.66667%;
+}
+.six, .row .six {
+  width: 50%;
+}
+.seven, .row .seven {
+  width: 58.33333%;
+}
+.eight, .row .eight {
+  width: 66.66667%;
+}
+.nine, .row .nine {
+  width: 75%;
+}
+.ten .row .ten {
+  width: 83.33333%;
+}
+.eleven, .row .eleven {
+  width: 91.66667%;
+}
+.twelve, .row .twelve {
+  width: 100%;
 }
 
+/*For the tablet users*/
+@media screen and (max-width:768px) {
+  .row {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .column, .columns {
+    padding: 0 15px;
+  }
+  .tab-fourth, .row .tab-fourth {
+    width: 25%;
+  }
+  .tab-third, .row .tab-third {
+    width: 33.33333%;
+  }
+  .tab-half, .row .tab-half {
+    width: 50%;
+  }
+  .tab-2thirds, .row .tab-2thirds {
+    width: 66.66667%;
+  }
+  .tab-3fourths, .row .tab-3fourths {
+    width: 75%;
+  }
+  .tab-whole, .row .tab-whole {
+    width: 100%;
+  }
+}
 
+/*For the mobile users*/
+@media screen and (max-width:600px) {
+  .row {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .row .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .column, .columns {
+    padding: 0 10px;
+  }
+  .mob-fourth, .row .mob-fourth {
+    width: 25%;
+  }
+  .mob-half, .row .mob-half {
+    width: 50%;
+  }
+  .mob-3fourths, .row .mob-3fourths {
+    width: 75%;
+  }
+  .mob-whole, .row .mob-whole {
+    width: 100%;
+  }
+}
 
-/*********************************************************
-  FOOTER
-*********************************************************/
+/*For people with really small devices*/
+@media screen and (max-width:400px) {
+  .row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .column, .columns {
+    width: auto !important;
+    float: none !important;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+    padding: 0;
+  }
+  [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+}
+.twelve, .row .twelve {
+  width: 100%;
+}
+
+/*Footer*/
 
 .footer {
-  padding: 700px 0 20px 0;
+  padding: 100px 0 20px 0;
   font-size: 14px;
   opacity: 0.5;
   transition: opacity 200ms linear;
 }
 
-.footer:hover {
-  opacity: 1;
+.footer a:hover {
+  color: blueviolet;
+
+}
+#footerlist{
+  text-align: center;
+}
+#footerlist li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 30px;
+  font-size: 4em;
 }
 
-
-/*********************************************************
-  RESPONSIVE
-*********************************************************/
+/*A dash of responsiveness*/
 
 @media(max-width: 425px) {
   .button.button--large {
@@ -214,6 +385,7 @@ text-align: center;
     margin: 56px auto 41px;
   }
 }
+/*Other*/
 .introcontainer{
   text-align: center;
 }

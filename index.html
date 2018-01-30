@@ -6,6 +6,11 @@
 <title>Welcome!</title>
 <link href = "css/style.css" rel="stylesheet" type="text/css">
 <link href = "css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jqueryplugin.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<!-- Didn't really make this icon yet, but i'll add it soon -->
+<link rel="shortcut icon" href="favicon.png" >
 <style type="text/css" media="screen">
 .header {
 height: 100%;
@@ -18,7 +23,7 @@ font-family: ProximaNova-SemiBold;
 p{
 font-family: ProximaNova-Thin;
 }
-
+/*How's your font-face?*/
 @font-face {
 font-family: ProximaNova-Thin;
 src: url('fonts/ProximaNova-Thin.eot') format('embedded-opentype');
@@ -33,11 +38,14 @@ src: url('fonts/ProximaNova-SemiBold.woff') format('woff');
 src: url('fonts/ProximaNova-SemiBold.woff2') format('woff2');
 src: url('fonts/ProximaNova-SemiBold.ttf') format('truetype');
 
-}  
+}
+
 </style>
 </head>
+
 <!-- Don't stare at my body for too long, you will burn -->
 <body>
+
 <header class="header">
 <div class="container">
 <div class="header__introduction">
@@ -52,23 +60,63 @@ src: url('fonts/ProximaNova-SemiBold.ttf') format('truetype');
 <img src="images/downarrow.png" />
 </a>
 
+<!-- Because who doesn't like a canvas? -->
 <canvas class="header__background"></canvas>
 </header>
 <div class="introcontainer">
 <h1 class="wow jackInTheBox" data-wow-delay="0.4">Let me introduce myself</h1>
 <p class="wow fadeInUp" data-wow-delay="0.4"> or atleast try to</p>
 </div>
-<section class="about">
-  <!-- I'm still doing this, relax -->
-  <h1 style="color: blueviolet"class="wow jello" data-wow-delay="0.4">Still under construction</h1>
-<p class="wow rubberBand" data-wow-delay="0.4">Have patience</p>
+<section id="about">
 
+<div class="row section-head">
+
+<div class="twelve columns">	         
+
+<hr style=" width: 467px; height: 3px;" />
+
+<p style="text-align: center; font-size: 2em;">“ Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. ” 
+</p>
+
+</div>
+
+</div>
+
+<div class="row about-content"> 
+
+<div class="mob-whole six columns left">
+
+<h1>Who am i ?</h1>	
+<hr style="margin:0px; width: 467px; height: 3px; background-color: #660dbd" />
+
+<p>My name is Seshan Pillay, i am a 21 year old with a passion for software development.  Always researching new developments and currently experimenting with ASP.NET MVC.  Always pushing myself to learn more everyday.  Maybe it was that first HelloWorld program, maybe that was the one that sparked it, this constant fascination with how we can develop software to shape the world we live in...  
+</p>
+
+</div> 
+
+<div class="mob-whole six columns right">
+
+<h1>My skills.</h1>
+<hr style="margin:0px; width: 467px; height: 3px; background-color: #F12D90" />
+
+<p style="float: left;">Microsoft Technologies<br> Interface Design<br> Web Design<br> Photoshop<br> Kali linux<br> BackBox<br> Virtualization Wordpress<br> 
+</p>
+<p style="float: right;">Visual Studio<br> C#<br> HTML5<br> CSS3<br> SQL<br> PHP<br> ASP.NET MVC</p>	
+
+</div> 
+
+</div>   
 </section>
 
 
 <footer class="footer">
+	<ul id="footerlist">
+    <li style=""><a href="https://github.com/SeshanPillay25"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/seshan-pillay-04009814a/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+</ul>
+
 <div class="container container--large">
-<a href="https://github.com/SeshanPillay25" target="_blank">Seshan Pillay</a>
+<a href="">Seshan Pillay</a>
 </div>
 
 

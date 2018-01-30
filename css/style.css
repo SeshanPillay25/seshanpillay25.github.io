@@ -1,0 +1,228 @@
+
+html, body{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #000;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 62px;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 62px 0;
+  font-size: 18px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  width: 20px;
+  height: 1px;
+  margin: 96px auto 81px;
+  background-color: #2A2F34;
+  border: none;
+}
+div{
+  display: block;
+}
+
+.container {
+  position: relative;
+  max-width: 379px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.container.container--large {
+  max-width: 525px;
+}
+
+.container.container--large p {
+  max-width: 377px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.9;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #2A2F34;
+  border-radius: 5px;
+}
+
+.button.button--primary {
+  background-color: #2A8DF4;
+}
+
+.button.button--secondary {
+  background-color: #587798;
+}
+
+.button.button--primary:hover {
+  background-color: #2682E1;
+}
+
+.button.button--secondary:hover {
+  background-color: #516E8C;
+}
+
+.button.button--large {
+  padding: 30px 50px;
+}
+
+
+/*********************************************************
+  HEADER
+*********************************************************/
+
+.header {
+  height: 100%;
+  background: url('images/img.png') bottom no-repeat transparent;
+  background-size: cover;
+}
+
+.header .container {
+  z-index: 10;
+}
+
+.header .header__introduction {
+  padding-top: 60%;
+}
+
+.header .header__introduction p {
+  opacity: 0.9;
+}
+
+.header .header__scroll {
+  position: absolute;
+  width: 110px;
+  right: 0;
+  left: 0;
+  bottom: 29px;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+}
+
+.header .header__background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+/*********************************************************
+  About
+*********************************************************/
+.about{
+text-align: center;
+
+}
+
+
+
+/*********************************************************
+  FOOTER
+*********************************************************/
+
+.footer {
+  padding: 700px 0 20px 0;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: opacity 200ms linear;
+}
+
+.footer:hover {
+  opacity: 1;
+}
+
+
+/*********************************************************
+  RESPONSIVE
+*********************************************************/
+
+@media(max-width: 425px) {
+  .button.button--large {
+    padding: 30px 35px;
+  }
+
+  hr {
+    margin: 76px auto 61px;
+  }
+}
+
+@media(max-width: 375px) {
+  .button.button--large {
+    padding: 20px 25px;
+  }
+
+  .header .header__scroll {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 320px) {
+  .button.button--large {
+    padding: 17px 22px;
+  }
+
+  hr {
+    margin: 56px auto 41px;
+  }
+}
+.introcontainer{
+  text-align: center;
+}
+.introcontainer h1{
+    z-index: -1;
+    color:#ff206a;
+    padding-top: 30px;
+
+}
+.introcontainer p{
+    padding-bottom: 20px;
+}

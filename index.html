@@ -1,7 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+<title>Welcome!</title>
+<link href = "css/style.css" rel="stylesheet" type="text/css">
+<link href = "css/animate.css" rel="stylesheet" type="text/css">
+<style type="text/css" media="screen">
+.header {
+height: 100%;
+background: url('images/img.png') bottom no-repeat transparent;
+background-size: cover;
+}
+h1{
+font-family: ProximaNova-SemiBold;
+}
+p{
+font-family: ProximaNova-Thin;
+}
+
+@font-face {
+font-family: ProximaNova-Thin;
+src: url('fonts/ProximaNova-Thin.woff');
+} 
+@font-face {
+font-family: ProximaNova-SemiBold;
+src: url('fonts/ProximaNova-SemiBold.woff');
+
+}  
+</style>
+</head>
+<!-- Don't stare at my body for too long, you will burn -->
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<header class="header">
+<div class="container">
+<div class="header__introduction">
+<img src = "images/fcompressed.jpg" style = "width: 196px; height: 196px; margin-top: -105px; border: 8px solid #75A5B7; border-radius: 7em; ">
+<h1>Seshan Pillay</h1>
+<p>Welcome to my portfolio</p>
+</div>
+</div>
+
+<a class="header__scroll scroll" href="#about">
+
+<img src="images/downarrow.png" />
+</a>
+
+<canvas class="header__background"></canvas>
+</header>
+<div class="introcontainer">
+<h1 class="wow jackInTheBox" data-wow-delay="0.4">Let me introduce myself</h1>
+<p class="wow fadeInUp" data-wow-delay="0.4"> or atleast try to</p>
+</div>
+<section class="about">
+  <!-- I'm still doing this, relax -->
+  <h1 style="color: blueviolet"class="wow jello" data-wow-delay="0.4">Still under construction</h1>
+<p class="wow rubberBand" data-wow-delay="0.4">Have patience</p>
+
+</section>
+
+
+<footer class="footer">
+<div class="container container--large">
+<a href="https://github.com/SeshanPillay25" target="_blank">Seshan Pillay</a>
+</div>
+
+
+</footer>
+
+<script src="js/particles.min.js"></script>
+<script>
+window.onload = function() {
+Particles.init({
+selector: '.header__background',
+color: '#75A5B7',
+maxParticles: 130,
+connectParticles: true,
+responsive: [
+{
+breakpoint: 768,
+options: {
+maxParticles: 80
+}
+}, {
+breakpoint: 375,
+options: {
+maxParticles: 50
+}
+}
+]
+});
+};
+</script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>	
 </body>
 </html>

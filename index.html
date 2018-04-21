@@ -1,319 +1,362 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
-<title>Welcome!</title>
-<link href = "css/style.css" rel="stylesheet" type="text/css">
-<link href = "css/animate.css" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="js/jqueryplugin.js"></script>
-<script type="text/javascript" src="js/smoothscroll.js"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+    <title>Welcome!</title>
+    <link href = "css/style.css" rel="stylesheet" type="text/css">
+    <link href = "css/animate.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jqueryplugin.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics, relax, i'm not spying-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113374538-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics, relax, i'm not spying-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113374538-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-113374538-1');
-</script>
+      gtag('config', 'UA-113374538-1');
+    </script>
 
-<!-- Finally added the icon -->
-<link rel="icon" href="icon.png" type="image/x-icon" >
-<style type="text/css" media="screen">
-.header {
-height: 100%;
-background: url('images/img2.jpg') bottom no-repeat transparent;
-background-size: cover;
-}
-.timeline-block p{
-	margin-left: 10px;
-}
-h1{
-font-family: Product sans;
-}
-h2{
-font-family: Product sans;
-font-size: 50px;
-text-align: center;
-}
-h3{
-	margin-left: 10px;
-}
-h3,h4{
-font-family: Product sans;	
-}
-h4{
-font-size: 1.17em;
-}
-p{
-font-family: Product sans;
-}
-/*How's your font-face?*/
-@font-face {
-font-family: ProximaNova-Thin;
-src: url('fonts/ProximaNova-Thin.eot') format('embedded-opentype');
-src: url('fonts/ProximaNova-Thin.woff') format('woff');
-src: url('fonts/ProximaNova-Thin.woff2') format('woff2');
-src: url('fonts/ProximaNova-Thin.ttf') format('truetype');
-} 
-@font-face {
-font-family: ProximaNova-SemiBold;
-src: url('fonts/ProximaNova-SemiBold.eot') format('embedded-opentype');
-src: url('fonts/ProximaNova-SemiBold.woff') format('woff');
-src: url('fonts/ProximaNova-SemiBold.woff2') format('woff2');
-src: url('fonts/ProximaNova-SemiBold.ttf') format('truetype');
+    <!-- Finally added the icon -->
+    <link rel="icon" href="icon.png" type="image/x-icon" >
+    <style type="text/css" media="screen">
+    .header {
+      height: 100%;
+      background: url('images/img2.jpg') bottom no-repeat transparent;
+      background-size: cover;
+    }
+    .timeline-block p{
+     margin-left: 10px;
+   }
+   h1{
+    font-family: Product sans;
+  }
+  h2{
+    font-family: Product sans;
+    font-size: 50px;
+    text-align: center;
+  }
+  h3{
+  	margin-left: 10px;
+  }
+  h3,h4{
+    font-family: Product sans;	
+  }
+  h4{
+    font-size: 1.17em;
+  }
+  p{
+    font-family: Product sans;
+  }
+  /*How's your font-face?*/
+  @font-face {
+    font-family: ProximaNova-Thin;
+    src: url('fonts/ProximaNova-Thin.eot') format('embedded-opentype');
+    src: url('fonts/ProximaNova-Thin.woff') format('woff');
+    src: url('fonts/ProximaNova-Thin.woff2') format('woff2');
+    src: url('fonts/ProximaNova-Thin.ttf') format('truetype');
+  } 
+  @font-face {
+    font-family: ProximaNova-SemiBold;
+    src: url('fonts/ProximaNova-SemiBold.eot') format('embedded-opentype');
+    src: url('fonts/ProximaNova-SemiBold.woff') format('woff');
+    src: url('fonts/ProximaNova-SemiBold.woff2') format('woff2');
+    src: url('fonts/ProximaNova-SemiBold.ttf') format('truetype');
 
-}
+  }
+  @font-face {
+    font-family: Berserker-Regular;
+    src: url('fonts/Berserker-Regular.eot') format('embedded-opentype');
+    src: url('fonts/Berserker-Regular.woff2') format('woff2');
+    src: url('fonts/Berserker-Regular.woff') format('woff');
+    src: url('fonts/Berserker-Regular.ttf') format('truetype');
+    
+  }
+
 
 </style>
 </head>
 
-<!-- Don't stare at my body for too long, you will burn -->
+<!-- This be the body-->
 <body>
 
-<header class="header">
-<div class="container">
-<div class="header__introduction">
-<img src = "images/fcompressed.jpg" style = "width: 196px; height: 196px; margin-top: -105px; border: 8px solid #048dfb; border-radius: 7em; ">
-<h1>Seshan Pillay</h1>
-<p>Welcome</p>
-</div>
-</div>
+  <header class="header">
+    <div class="container">
+      <div class="header__introduction">
+        <img src = "images/fcompressed.jpg" style = "width: 196px; height: 196px; margin-top: -105px; border: 8px solid #048dfb; border-radius: 7em; ">
+        <h1>Seshan Pillay</h1>
+        <p>Welcome</p>
+      </div>
+    </div>
 
-<a class="header__scroll scroll" href="#about">
+    <a class="header__scroll scroll" href="#about">
 
-<img src="images/downarrow.png" />
-</a>
+      <img src="images/downarrow.png" />
+    </a>
 
-<!-- Because who doesn't like a canvas? -->
-<canvas class="header__background"></canvas>
-</header>
-<div class="introcontainer">
-<h1 class="wow jackInTheBox" data-wow-delay="0.4">Let me introduce myself</h1>
-<p class="wow fadeInUp" data-wow-delay="0.4"> or atleast try to</p>
-</div>
-<section id="about">
+    <!-- Because who doesn't like a canvas? -->
+    <canvas class="header__background"></canvas>
+  </header>
+  <div class="introcontainer">
+    <h1 class="wow jackInTheBox" data-wow-delay="0.4">Let me introduce myself</h1>
+    <p class="wow fadeInUp" data-wow-delay="0.4"> or atleast try to</p>
+  </div>
+  <section id="about">
 
-<div class="row section-head">
+    <div class="row section-head">
 
-<div class="twelve columns">	         
+      <div class="twelve columns">	         
 
-<hr style=" width: 467px; height: 3px;" />
+        <hr style=" width: 467px; height: 3px;" />
 
-<p class="wow slideInUp" data-wow-delay="0.5" style="text-align: center; font-size: 2em;">“ Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. ” 
-</p>
+        <p class="wow slideInUp" data-wow-delay="0.5" style="text-align: center; font-size: 2em;">“ Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. ” 
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-<div class="row about-content"> 
+    <div class="row about-content"> 
 
-<div class="mob-whole six columns left">
-<div class="wow fadeInLeft" data-wow-delay="1s">
-<h1>Who am i ?</h1>	
-<hr style="margin:0px; width: 467px; height: 3px; background-color: #660dbd" />
+      <div class="mob-whole six columns left">
+        <div class="wow fadeInLeft" data-wow-delay="1s">
+          <h1>Who am i ?</h1>	
+          <hr style="margin:0px; width: 467px; height: 3px; background-color: #660dbd" />
 
-<p>My name is Seshan Pillay, i am a 21 year old with a passion for software development.  Always researching new developments and currently experimenting with ASP.NET MVC.  Always pushing myself to learn more everyday.  What drives me is knowing that with I.T, anything is possible, we can create new ways of making the world work more efficiently, more effectively, we can connect more people and help so many.  That is why i wake up every morning and open up that IDE.
-</p>
-</div>
-</div> 
+          <p>My name is Seshan Pillay, i am a 21 year old with a passion for software development.  Always researching new developments and currently experimenting with ASP.NET MVC.  Always pushing myself to learn more everyday.  What drives me is knowing that with I.T, anything is possible, we can create new ways of making the world work more efficiently, more effectively, we can connect more people and help so many.  That is why i wake up every morning and open up that IDE.
+          </p>
+        </div>
+      </div> 
 
-<div class="mob-whole six columns right">
-<div class="wow fadeInRight" data-wow-delay="1">
-<h1>My skills.</h1>
-<hr style="margin:0px; width: 467px; height: 3px; background-color: #F12D90" />
+      <div class="mob-whole six columns right">
+        <div class="wow fadeInRight" data-wow-delay="1">
+          <h1>My skills.</h1>
+          <hr style="margin:0px; width: 467px; height: 3px; background-color: #F12D90" />
 
-<p style="float: left;">Microsoft Technologies<br> Interface Design<br> Web Design<br> Photoshop<br> Kali Linux<br> BackBox<br> Virtualization<br> Wordpress<br>Software testing 
-</p>
-<p style="float: right;">Visual Studio<br> C#<br> Java<br> HTML5<br> CSS3<br> SQL<br> PHP<br> ASP.NET MVC</p>	
+          <p style="float: left;">Microsoft Technologies<br> Interface Design<br> Web Design<br> Photoshop<br> Kali Linux<br> BackBox<br> Virtualization<br> Wordpress<br>Software testing 
+          </p>
+          <p style="float: right;">Visual Studio<br> C#<br> Java<br> HTML5<br> CSS3<br> SQL<br> PHP<br> ASP.NET MVC</p>	
 
-</div> 
+        </div> 
 
-</div>   
-</section>
+      </div>   
+    </section>
 
-<!-- A little resume -->
-<section id="resume" >
+    <!-- A little resume -->
+    <section id="resume" >
 
-<div class="row section-intro">
-<div class="col-twelve"> 
-<div class="wow jackInTheBox" data-wow-delay="0.7">  			
-<h2>Information.</h2>
+      <div class="row section-intro">
+        <div class="col-twelve"> 
+          <div class="wow jackInTheBox" data-wow-delay="0.7">  			
+            <h2>Information</h2>
 
-<p style="text-align: center; font-size: 20px;" class="lead">“I strive for two things in design: simplicity and clarity. Great design is born of those two things.”</p>
-</div>
+            <p style="text-align: center; font-size: 20px;" class="lead">“I strive for two things in design: simplicity and clarity. Great design is born of those two things.”</p>
+          </div>
 
-</div>   		
-</div>  
-<div class="row resume-timeline">
+        </div>   		
+      </div>  
+      <div class="row resume-timeline">
 
-<div class="col-twelve resume-header">
-<div class="wow jackInTheBox" data-wow-delay="0.7">
-<h2>Education</h2>
-</div>
-</div> 
+        <div class="col-twelve resume-header">
+          <div class="wow jackInTheBox" data-wow-delay="0.7">
+            <h2>Education</h2>
+          </div>
+        </div> 
 
-<div class="col-twelve">
+        <div class="col-twelve">
 
-<div class="timeline-wrap">
-<div class="wow fadeInUp" data-wow-delay="0.7">
-<div class="timeline-block">
+          <div class="timeline-wrap">
+            <div class="wow fadeInUp" data-wow-delay="0.7">
+              <div class="timeline-block">
 
-<div class="timeline-ico">
-<i class="fa fa-graduation-cap"></i>
-</div>
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
 
-<div class="timeline-header">
-<h3>National Senior Certificate</h3>
-<p>2013</p>
-</div>
+                <div class="timeline-header">
+                  <h3>National Senior Certificate</h3>
+                  <p>2013</p>
+                </div>
 
-<div class="timeline-content">
-<h4>Wingen Heights Secondary</h4>
-<p style="color:#ebebeb;">.</p>
-</div>
+                <div class="timeline-content">
+                  <h4>Wingen Heights Secondary</h4>
+                  <p style="color:#ebebeb;">.</p>
+                </div>
 
-</div>
-</div> 
-<div class="wow fadeInUp" data-wow-delay="0.8">
-<div class="timeline-block">
+              </div>
+            </div> 
+            <div class="wow fadeInUp" data-wow-delay="0.8">
+              <div class="timeline-block">
 
-<div class="timeline-ico">
-<i class="fa fa-graduation-cap"></i>
-</div>
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
 
-<div class="timeline-header">
-<h3>National Certificate: C#.NET</h3>
-<p>2014</p>
-</div>
+                <div class="timeline-header">
+                  <h3>National Certificate: C#.NET</h3>
+                  <p>2014</p>
+                </div>
 
-<div class="timeline-content">
-<h4>University of South Africa</h4>
-<p>with distinction</p>
-</div>
+                <div class="timeline-content">
+                  <h4>University of South Africa</h4>
+                  <p>with distinction</p>
+                </div>
 
-</div>
-</div>
-<div class="wow fadeInUp" data-wow-delay="0.9">
-<div class="timeline-block">
+              </div>
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="0.9">
+              <div class="timeline-block">
 
-<div class="timeline-ico">
-<i class="fa fa-graduation-cap"></i>
-</div>
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
 
-<div class="timeline-header">
-<h3>National Diploma: Information Technology</h3>
-<p>2015-2017</p>
-</div>
+                <div class="timeline-header">
+                  <h3>National Diploma: Information Technology</h3>
+                  <p>2015-2017</p>
+                </div>
 
-<div class="timeline-content">
-<h4>Damelin</h4>
-<p>with 19 distinctions</p>
-</div>
+                <div class="timeline-content">
+                  <h4>Damelin</h4>
+                  <p>with 19 distinctions</p>
+                </div>
 
-</div> 
-</div>
+              </div> 
+            </div>
 
-</div>    			
+          </div>    			
 
-</div>
+        </div>
 
-</div> 
-
-
-<div class="row resume-timeline">
-
-<div class="col-twelve resume-header">
-<div class="wow jackInTheBox" data-wow-delay="0.7">
-<h2 style="color: #007eff;">Work Experience</h2>
-</div>
-</div> 
-
-<div class="col-twelve">
-
-<div class="timeline-wrap">
-<div class="wow fadeInUp" data-wow-delay="0.7">
-<div class="timeline-block">
-
-<div class="timeline-ico">
-<i class="fa fa-briefcase"></i>
-</div>
-
-<div class="timeline-header">
-<h3>Web Developer</h3>
-<p>2017</p>
-</div>
-
-<div class="timeline-content">
-<h4>Kagiso Interactive</h4>
-<p>Website development, Software/App testing, Project documentation, Application mockups, Research and development</p>
-</div>
-
-</div>
-</div>  
-
-</div> 			
-
-</div> 
-
-</div> 
-</section>
-
-<section class="contact">
-<div class="wow flipInX" data-wow-delay="0.7">
-<h2>Get in touch</h2>
-<p style="text-align: center;"><i class="fa fa-envelope" aria-hidden="true"></i></p>
-<p style="text-align: center; font-size: 20px;">seshanpillay25@gmail.com</p>
-<p style="text-align: center;">Feel free to check out my GitHub profile and connect with me on LinkedIn !</p>
-</div>
-</section>
+      </div> 
 
 
-<footer class="footer">
-<ul id="footerlist">
-<li style=""><a href="https://github.com/SeshanPillay25"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-<li><a href="https://www.linkedin.com/in/seshan-pillay-04009814a/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-</ul>
+      <div class="row resume-timeline">
 
-<div class="container container--large">
-<a href="">Seshan Pillay</a>
-</div>
+        <div class="col-twelve resume-header">
+          <div class="wow jackInTheBox" data-wow-delay="0.7">
+            <h2 style="color: #007eff;">Work Experience</h2>
+          </div>
+        </div> 
+
+        <div class="col-twelve">
+
+          <div class="timeline-wrap">
+            <div class="wow fadeInUp" data-wow-delay="0.7">
+              <div class="timeline-block">
+
+                <div class="timeline-ico">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+
+                <div class="timeline-header">
+                  <h3>Web Developer</h3>
+                  <p>2017</p>
+                </div>
+
+                <div class="timeline-content">
+                  <h4>Kagiso Interactive</h4>
+                  <p>Website development, Software/App testing, Project documentation, Application mockups, Research and development</p>
+                </div>
+
+              </div>
+            </div>  
+
+          </div> 			
+
+        </div> 
+
+      </div>
+      <div class="row resume-timeline">
+
+        <div class="col-twelve resume-header">
+          <div class="wow jackInTheBox" data-wow-delay="0.7">
+            <h2 style="color: #660dbd;">Awards and Honors</h2>
+          </div>
+        </div> 
+
+        <div class="col-twelve">
+
+          <div class="timeline-wrap">
+            <div class="wow fadeInUp" data-wow-delay="0.7">
+              <div class="timeline-block">
+
+                <div class="timeline-ico">
+                  <i class="fa fa-code" style="font-size:25px"></i>
+                </div>
+
+                <div class="timeline-header">
+                  <h3>Merit Award</h3>
+                  <p>2018</p>
+                </div>
+
+                <div class="timeline-content">
+                  <h4>Damelin</h4>
+                  <p>Highest Overall Aggregate in Diploma Specialisation</p>
+                </div>
+
+              </div>
+            </div>  
+
+          </div>      
+
+        </div> 
+
+      </div>  
+    </section>
+
+    <section class="contact">
+      <div class="wow flipInX" data-wow-delay="0.7">
+        <h2>Get in touch</h2>
+        <p style="text-align: center;">Feel free to check out my GitHub profile and connect with me on LinkedIn !</p>
+      </div>
+    </section>
 
 
-</footer>
+    <footer class="footer">
+      <ul id="footerlist">
+        <li style=""><a href="https://github.com/SeshanPillay25"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/seshan-pillay-04009814a/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
 
-<script src="js/particles.min.js"></script>
-<script>
-window.onload = function() {
-Particles.init({
-selector: '.header__background',
-color: '#048dfb',
-maxParticles: 130,
-connectParticles: true,
-responsive: [
-{
-breakpoint: 768,
-options: {
-maxParticles: 80
-}
-}, {
-breakpoint: 375,
-options: {
-maxParticles: 50
-}
-}
-]
-});
-};
-</script>
-<script src="js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>	
-</body>
-</html>
+      <div class="container container--large">
+        <a href="">Seshan Pillay</a>
+      </div>
+
+
+    </footer>
+
+    <script src="js/particles.min.js"></script>
+    <script>
+      window.onload = function() {
+        Particles.init({
+          selector: '.header__background',
+          color: '#048dfb',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+          {
+            breakpoint: 768,
+            options: {
+              maxParticles: 80
+            }
+          }, {
+            breakpoint: 375,
+            options: {
+              maxParticles: 50
+            }
+          }
+          ]
+        });
+      };
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>	
+  </body>
+  </html>

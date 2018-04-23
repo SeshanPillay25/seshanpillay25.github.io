@@ -626,7 +626,11 @@ a:link,a:visited,a:hover,a:active{
 	padding-bottom: 30px;
 }
 @media (max-width: 767px){
+<<<<<<< HEAD
 	.cards img{max-width:50%;}
+=======
+	img{max-width:50%;}
+>>>>>>> origin/master
 }
 @media (max-width: 1080px){
 	.content{padding-bottom:150px;}

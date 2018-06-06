@@ -634,7 +634,7 @@
                 <!-- Contact Form -->
                 <div class="card">
                     <div class="card-content">
-                        <form id="contact-form" name="c-form" method="post" action="https://docs.google.com/forms/d/1wsK8gqm_SPGM1PUxOK77MC6BJvmMxnnoQ68oVrBwRTI/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                        <form id="contact-form" name="c-form" method="post" action="https://docs.google.com/forms/d/1wsK8gqm_SPGM1PUxOK77MC6BJvmMxnnoQ68oVrBwRTI/prefill" target="hidden_iframe" onsubmit="submitted=true;">
                             <!-- Name -->
                             <div class="input-field">
                                 <input id="entry.2005620554" type="text" class="validate" name="entry.2005620554" required>
@@ -734,9 +734,9 @@
 
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
+$('#contact-form').on('submit', function(e) {
+  $('#contact-form *').fadeOut(2000);
+  $('#contact-form').prepend('Your submission has been processed...');
   });
 </script>
 </body>
